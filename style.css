@@ -23,14 +23,8 @@ section {
     padding: 1%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
     font-weight: 700;
-    color: #231F1E;
-}
-
-p {
-    font-size: 1.3rem;
-    line-height: 1.5rem;
     color: #231F1E;
 }
 
@@ -50,27 +44,21 @@ h4 {
     font-size: 1.5rem;
 }
 
-h5 {
-    font-size: 1rem;
-}
-
-h6 {
-    font-size: 1rem;
+p {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    color: #231F1E;
 }
 
 /* menu de navegação */
 section.navBar {
-    background-color: #231F20;
+    background-color: #231F1E;
 }
 
 .navBar nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-nav .menu-esquerda .mobile-button img  {
-    
 }
 
 nav .menu-direita {
@@ -123,7 +111,8 @@ header button {
     border: solid 1px #ECC014;
     border-radius: 15px;
     color: #ECC014;
-    background-color: #4C0574;
+    background-color: #65029C;
+    box-shadow: 0px 4px 20px 0px rgba(236, 192, 20, 0.25);
 }
 
 header button:hover {
@@ -148,7 +137,7 @@ section.sobre {
 }
 
 .conteudo h2 span {
-    color: #4C0574;
+    color: #65029C;
     text-transform: uppercase;
 }
 
@@ -170,4 +159,72 @@ section.sobre {
 
 .imagem-sobre img {
     width: 100%;
+}
+
+/* Seção serviços */
+section.servicos {
+    background-color: #D9D9D9;
+}
+
+/* Seção portfolio */
+section.portfolio {
+    background-color: #ECC014;
+}
+
+/* Seção contato */
+section.contato {
+    padding: 5% 0% 4%;
+    background-color: #D9D9D9;
+}
+
+.contato .container{
+    display: flex;
+    flex-direction: row;
+}
+
+.container .informacao-contato, .formulario {
+    width: 50%;
+}
+
+.informacao-contato, .formulario h2 {
+    text-align: center;
+}
+
+.informacao-contato h2 > p {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.informacao-contato ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+}
+
+ul .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5% 0%;
+}
+
+.item .icone {
+    margin-right: 5%;
+}
+
+/* Seção footer */
+section.footer {
+    padding: 1% 0%;
+    background-color: #231F1E;
+}
+
+footer {
+    text-align: center;
+}
+
+footer span {
+    color: #FDFBFF;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
