@@ -25,6 +25,13 @@ section {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
+    color: #231F1E;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    color: #231F1E;
 }
 
 h1 {
@@ -122,4 +129,45 @@ header button {
 header button:hover {
     cursor: pointer;
     background-color: #700baa;
+}
+
+/* Seção sobre */
+section.sobre {
+    padding: 5% 0 4%;
+    background-color: #ECC014;
+}
+
+.sobre .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.container .conteudo,
+.imagem-sobre {
+    max-width: 50%;
+}
+
+.conteudo h2 span {
+    color: #4C0574;
+    text-transform: uppercase;
+}
+
+.conteudo h2::after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 10%;
+    background-color: #231F1E;
+}
+
+.conteudo p {
+    margin-top: 7%;
+}
+
+.container .imagem-sobre {
+    padding: 0% 5%;
+}
+
+.imagem-sobre img {
+    width: 100%;
 }
