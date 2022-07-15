@@ -50,6 +50,35 @@ p {
     color: #231F1E;
 }
 
+@media only screen and (max-width: 720px) {
+    h1, h2, h3, h4 {
+        font-weight: 700;
+        color: #231F1E;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    h4 {
+        font-size: 1rem;
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        color: #231F1E;
+    }
+}
+
 /* menu de navegação */
 section.navBar {
     background-color: #231F1E;
@@ -115,6 +144,14 @@ nav .menu-direita {
     
     nav .menu-esquerda {
         justify-content: space-around;
+    }
+
+    .menu-esquerda a {
+        max-width: 200px;
+    }
+
+    .menu-esquerda a img {
+        width: 100%;
     }
 
     .menu-esquerda .botao {
@@ -433,14 +470,37 @@ section.portfolio {
 
 .container .galeria {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     margin: 5% 0%;
-    overflow-x: scroll;
 }
 
-.galeria .slide {
+.galeria .item {
     margin: 0% 1%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .carrossel .item p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    
+    .carrossel .item p.autor {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .carrossel .item p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    
+    .carrossel .item p.autor {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
 }
 
 /* Seção contato */
@@ -485,6 +545,22 @@ ul .item {
     margin-right: 5%;
 }
 
+@media only screen and (max-width: 720px) {
+    .contato .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .container .informacao-contato, .formulario {
+        width: 100%;
+    }
+
+    ul .item {
+        padding-left: 10%;
+    }
+}
+
 /* Seção footer */
 section.footer {
     padding: 1% 0%;
@@ -499,4 +575,10 @@ footer span {
     color: #FDFBFF;
     font-size: 1.3rem;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 720px) {
+    footer span {
+        font-size: 1rem;
+    }
 }
