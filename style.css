@@ -173,6 +173,19 @@ header button:hover {
     background-color: #700baa;
 }
 
+@media only screen and (max-width: 720px) {
+    section header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header button {
+        margin-top: 10%;
+    }
+}
+
 /* Seção sobre */
 section.sobre {
     padding: 5% 0 4%;
@@ -212,6 +225,22 @@ section.sobre {
 
 .imagem-sobre img {
     width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container .imagem-sobre {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .sobre .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* Seção serviços */
@@ -286,6 +315,17 @@ section.servicos {
     margin: 1% 0 3%;
 }
 
+@media only screen and (max-width: 720px) {
+    .rows .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row .card:not(:last-child) {
+        margin-bottom: 5%;
+    }
+}
+
 /* Seção portfolio */
 section.portfolio {
     padding: 5% 0% 4%;
@@ -293,6 +333,7 @@ section.portfolio {
 }
 
 .portfolio .container {
+    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -318,6 +359,7 @@ section.portfolio {
     justify-content: center;
     align-items: center;
     margin-bottom: 5%;
+    width: 100%;
 }
 
 .depoimentos .botao {
@@ -355,10 +397,6 @@ section.portfolio {
 }
 
 .carrossel .item {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     text-align: center;
     transition: opacity 1s;
