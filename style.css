@@ -560,6 +560,54 @@ ul .item {
 
 .item .icone {
     margin-right: 5%;
+    width: 10%;
+}
+
+.icone img {
+    width: 100%;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0% 5%;
+    margin: 10% 0%;
+}
+
+form label {
+    font-weight: 700;
+}
+
+form input {
+    margin-top: 1%;
+    margin-bottom: 5%;
+    padding: 2% 3%;
+    border: none;
+    border-radius: 20px;
+}
+
+form .box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box .recaptcha {
+    width: 60%;
+}
+
+.box .botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.botao input[type="button"] {
+    width: 100%;
+    padding: 5% 0%;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
@@ -573,8 +621,25 @@ ul .item {
         width: 100%;
     }
 
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 0% 5%;
+        margin: 10% 0%;
+    }
+
     ul .item {
-        padding-left: 10%;
+        width: 100%;
+    }
+
+    .item .icone {
+        width: 10%;
+    }
+
+    .icone img {
+        width: 100%;
     }
 }
 
