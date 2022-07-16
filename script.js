@@ -47,3 +47,13 @@ function mostrarMenu () {
 }
 
 botaoNav.addEventListener('click', mostrarMenu);
+
+document.querySelector(".navlinks").addEventListener("click", (event) => {
+    if (event.target.classList.contains("navlink")) {
+      document.querySelectorAll(".navlink").forEach((navlink) => {
+        navlink.classList.remove("ativado");
+      });
+  
+      event.target.classList.add("ativado");
+    }
+  });
