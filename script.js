@@ -35,3 +35,15 @@ function item_anterior () {
 
 seta_anterior.addEventListener('click', item_anterior);
 seta_proximo.addEventListener('click', item_proximo);
+
+
+// click no botão mobile
+const botaoNav = document.querySelector("#botao-menu");
+
+function mostrarMenu () {
+    const menu = document.querySelector(".menu-direita");
+
+    menu.classList.toggle("mostrar");
+}
+
+botaoNav.addEventListener('click', mostrarMenu);

@@ -10,6 +10,10 @@
     list-style-type: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 section {
     display: flex;
     justify-content: center;
@@ -81,6 +85,10 @@ p {
 
 /* menu de navegação */
 section.navBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1111;
     background-color: #231F1E;
 }
 
@@ -163,9 +171,14 @@ nav .menu-direita {
     }
 
     .menu-direita {
+        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .menu-direita.mostrar {
+        display: flex;
     }
 
     .menu-direita li {

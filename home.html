@@ -13,7 +13,7 @@
             <div class="menu-esquerda">
                 <a href="#"><img src="imagens/logo-rocketeventos.webp" alt="logo-rocket-eventos"></a>
                 <div class="botao">
-                    <button type="button">
+                    <button type="button" id="botao-menu">
                         <img src="imagens/hamburger-menu.svg" alt="">
                     </button>
                 </div>
@@ -21,27 +21,27 @@
             </div>
             
             <ul class="menu-direita">
-                <li><a href="#" class="ativado">HOME</a></li>
-                <li><a href="#">SOBRE</a></li>
-                <li><a href="#">SERVIÇOS</a></li>
-                <li><a href="#">PORTFÓLIO</a></li>
+                <li><a href="#home" class="ativado">HOME</a></li>
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#servicos">SERVIÇOS</a></li>
+                <li><a href="#portfolio">PORTFÓLIO</a></li>
                 <li><a href="#">CONTATO</a></li>
             </ul>
         </nav>
     </section>
 
-    <section class="header">
+    <section class="header" id="home">
         <header class="container">
             <h1>ORGANIZAR UM EVENTO <br>NUNCA FOI TÃO SIMPLES</h1>
             <h3>COM A ROCKET VOCÊ TORNA O SEU EVENTO UM <br>MOMENTO INESQUECÍVEL</h3>
 
-            <a href="#">
+            <a href="#orcamento">
                 <button type="button">SOLICITE UM ORÇAMENTO</button>
             </a>
         </header>
     </section>
 
-    <section class="sobre">
+    <section class="sobre" id="sobre">
         <div class="container">
             <div class="conteudo">
                 <h2>Sobre a <span>rocket</span></h2>
@@ -59,7 +59,7 @@
         </div>
     </section>
 
-    <section class="servicos">
+    <section class="servicos" id="servicos">
         <div class="container">
             <h2>Nossos serviços</h2>
 
@@ -127,7 +127,7 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <h2>Portfolio</h2>
 
@@ -183,7 +183,7 @@
         </div>
     </section>
 
-    <section class="contato">
+    <section class="contato" id="contato">
         <div class="container">
             <div class="informacao-contato">
                 <h2>Entre em contato</h2>
@@ -229,7 +229,7 @@
                 </ul>
             </div>
 
-            <div class="formulario">
+            <div class="formulario" id="orcamento">
                 <h2>ou solicite um orçamento!</h2>
                 <form action="#">
                     <label for="nome">Nome</label>
